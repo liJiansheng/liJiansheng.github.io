@@ -1,0 +1,26 @@
+﻿{ 
+"contacts":[
+     {
+	"name": "Peter",
+	"email":"pete@my.com",
+	"mobile":"12345",
+	"address": {
+         "streetAddress": "123 st 51",
+         "town": "Ang Mo Kio",
+         "postalCode": "10021"
+     	  }
+     },
+     {
+	"name": "James",
+	"email":"james@my.com",
+	"mobile":"54321",
+	"address": {
+         "streetAddress": "546 st 33",
+         "town": "Toa Payoh",
+         "postalCode": "33321"
+     	  }
+     }
+ ]
+}
+    
+	
