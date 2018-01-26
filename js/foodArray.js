@@ -8,7 +8,7 @@ $.getJSON("food.json", function(data){
 	console.log(data);
 
 });*/
-var jqxhr = $.getJSON( "food.json", function() {
+var jqxhr = $.getJSON( "contacts.json", function() {
   console.log( "success" );
 })		
   .done(function(data) {
