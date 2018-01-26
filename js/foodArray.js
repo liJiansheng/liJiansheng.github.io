@@ -1,11 +1,13 @@
 
 $(document).ready(function() {
 var foodsearch="";
-var ingArray=[{'name':'burger','ingredients':[{'ing':'beef patty','loc':'NTUC','price':'$2.00'},{'ing':'lettuce','loc':'cold storage','price':'$1.00'}]}];
-console.log(ingArray[0].ingredients[1].ing);
+//var ingArray=[{'name':'burger','ingredients':[{'ing':'beef patty','loc':'NTUC','price':'$2.00'},{'ing':'lettuce','loc':'cold storage','price':'$1.00'}]}];
+//console.log(ingArray[0].ingredients[1].ing);
 
-$.getJSON("contacts.json", function(data){
+$.getJSON("food.json", function(data){
 	console.log(data);
+	
+
 });
 
 $("#findbtn").click(function(){	
