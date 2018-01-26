@@ -3,12 +3,27 @@ $(document).ready(function() {
 var foodsearch="";
 //var ingArray=[{'name':'burger','ingredients':[{'ing':'beef patty','loc':'NTUC','price':'$2.00'},{'ing':'lettuce','loc':'cold storage','price':'$1.00'}]}];
 //console.log(ingArray[0].ingredients[1].ing);
-
+/*
 $.getJSON("food.json", function(data){
 	console.log(data);
-	
 
-});
+});*/
+var jqxhr = $.getJSON( "food.json", function() {
+  console.log( "success" );
+})		
+  .done(function(data) {
+    console.log( "second success" );
+  })
+  .fail(function() {
+    console.log( "error" );
+  })
+  .always(function() {
+    console.log( "complete" );
+  });
+  
+  });
+
+
 
 $("#findbtn").click(function(){	
 	searchFood();
