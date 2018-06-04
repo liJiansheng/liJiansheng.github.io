@@ -1,7 +1,7 @@
 $(document).ready(function() {
 // JavaScript Document
 var taskArray=[];
-$.getJSON( "hip.json", function( data ) {
+$.getJSON( "stuff.json", function( data ) {
   console.log(data);
   });
 
