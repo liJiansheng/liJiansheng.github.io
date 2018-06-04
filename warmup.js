@@ -4,7 +4,7 @@ var total= 0;
 	var index = 0;
 	var exerciseArray = [];
 	
-$.getJSON("hip.json", function(data){
+$.getJSON("stuff.json", function(data){
 	console.log(data);
 });
 console.log("Starting warmup");
