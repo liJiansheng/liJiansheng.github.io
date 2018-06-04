@@ -2,11 +2,11 @@
 	"hip":[
 		{
 			"day":"1",
-			"type":"speed",
+			"type":"speed"
 		},
 		{
 			"day":"2",
-			"type":"strength",
+			"type":"strength"
 		}
 	]
 }
