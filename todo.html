@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+     <script src="http://cdn.rawgit.com/jquery/jquery-ui/1.10.4/ui/jquery.ui.datepicker.js"></script>
+    <script id="mobile-datepicker" src="http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js"></script>
+    <script src="js/readjson.js"></script>
+</head>
+
+<body>
+<div class="mainpage" data-role="page">
+	<div class="profile-head">
+		<h1>To Do List</h1>
+        
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+	<form>
+		<fieldset data-role="ui-field-task"> 
+			<label for="task">Task:</label>
+				<input type="text" name="task" id="task">
+			</fieldset><fieldset data-role="ui-field-priority"> 
+<label for="select-priority">Priority</label>
+<select name="priority" id="priority">
+<option value="1">1</option>
+<option value="2">2</option>
+ <option value="3">3</option>
+    </select>
+</fieldset>
+<input id="mydate" type="text" data-role="date">
+    <input id="add" type="button" value="Add">
+    </form>
+	    <table data-role="table" id="table-column-toggle" class="ui-responsive table-stroke">
+	              <thead>
+	                <tr>
+	                  <th data-priority="1">No</th>
+	                  <th>Name</th>
+	                  <th data-priority="3">Email</th>
+	                  <th c>Town</th>
+	                </tr>
+	              </thead>
+	              <tbody class="tasktable">	                     
+	              </tbody>
+                 
+	            </table>   
+    </div>
+           
+<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

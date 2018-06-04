@@ -1,8 +1,9 @@
 $(document).ready(function() {
 // JavaScript Document
-	var total= 0;
-	var index = 0;
-	var taskArray = [];
+var taskArray=[];
+$.getJSON( "contacts.json", function( data ) {
+  console.log(data);
+  });
 
 $("#add").click(function(){	
 	addTask();
@@ -29,7 +30,7 @@ function addTask(){
 	
 	function removeTask(id){
 		$(".taskrow").remove();
-		taskArray.splice(id,1);
+		taskArray.splice(id,1);w
 		for(i=0;i<taskArray.length;i++){
 		  $(".tasktable").append("<tr class='taskrow'><th>"+i+"</th><td>"+taskArray[i].name+"</td><td>"+taskArray[i].priority+"</td><td><input type='checkbox' id="+i+"></td></tr>");
 		  $("#"+i).change(function() {
