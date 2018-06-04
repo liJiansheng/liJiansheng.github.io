@@ -1,6 +1,6 @@
 $(document).ready(function() {
 // JavaScript Document
-var total= 0;
+	var total= 0;
 	var index = 0;
 	var taskArray = [];
 
